@@ -41,5 +41,5 @@ Then open http://127.0.0.1:8000
 ## Not connected in the Database
 
 ```
-I doesnt need to connect to the database as of now since i only use static data it will be found in app/Support/MockUsers.php
+It doesnt need to connect to the database as of now since i only use static data it will be found in app/Support/MockUsers.php
 ```
