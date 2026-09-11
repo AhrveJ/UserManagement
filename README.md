@@ -25,9 +25,22 @@ public/
 routes/web.php                                        # GET / and /user-management
 ```
 
-## Setup
+## Requirements
+```
+Before running the project, make sure you have:
 
-To run it:
+PHP
+Composer
+Laravel
+A web browser
+
+A database is not required for the current version.
+```
+
+## Setup
+Clone the project and navigate to the project directory:
+
+To run it: 
 
 ```bash
 composer install
@@ -42,4 +55,64 @@ Then open http://127.0.0.1:8000
 
 ```
 It doesnt need to connect to the database as of now since i only use static data it will be found in app/Support/MockUsers.php
+```
+
+## Approach
+
+```
+The application was built using Laravel Blade components to keep the UI modular and easier to maintain.
+
+The page is divided into reusable components:
+
+Navbar
+Sidebar
+Search bar
+Filters
+User table
+Pagination
+Add/Edit user modal
+Delete confirmation modal
+Toast notifications
+
+Client-side interactions are handled in:
+
+public/js/app.js
+
+This includes:
+
+User search
+Filtering
+Sorting
+Pagination
+Adding users
+Editing users
+Deleting users
+UI updates and notifications
+
+The styling is maintained in:
+
+public/css/app.css
+
+Bootstrap 5 utility classes are also used where appropriate for responsive layouts and UI components.
+
+```
+
+## Assumptions
+
+The application does not require a database for the current implementation.
+User data can be represented using static/mock data.
+CRUD operations are handled on the client side for demonstration purposes.
+
+## UI/UX changes
+
+```
+Responsive layout for different screen sizes.
+Responsive navigation and sidebar.
+Horizontal scrolling for the user table on smaller screens.
+Search functionality for quickly finding users.
+Filters for narrowing down user records.
+Sortable table columns.
+Pagination to avoid displaying too many records at once.
+Modal-based Add/Edit user forms.
+Delete confirmation modal to prevent accidental deletion.
 ```
